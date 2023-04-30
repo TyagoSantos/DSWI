@@ -4,4 +4,4 @@ REPOSITORIO DESENVOLVIMENTO WEB I
 
 Exercicios :
 <a href="https://tyagosantos.github.io/DSWI/exercicio1/home.html">exercicio1</a>
-
+<a href=https://tyagosantos.github.io/DSWI/exercicio2/home.html">exercicio1</a>
