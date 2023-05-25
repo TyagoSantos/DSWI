@@ -9,7 +9,7 @@
 <body>
     <main>
         <h1>Crie uma Nova Conta</h1>
-        <form action ="" method="post">
+        <form action ="cria_contra" method="post">
         <fieldset>
             <h2>Conta</h2>
             <ul>
@@ -23,11 +23,11 @@
                 </li>
                 <li>
                     <label for="email">E-mail:</label>
-                    <input type="ema" name="email" id="email">
+                    <input type="email" name="email" id="email">
                 </li>
                 <li>
                     <label for="senha">Senha:</label>
-                    <input type="pa" name="senha" id="senha">
+                    <input type="password" name="senha" id="senha">
                 </li>
                 <li>
                     <label for="confirma_senha">Repetir a senha:</label>
@@ -39,8 +39,8 @@
             <h2>Endereço</h2>
             <ul>
                 <li>
-                    <label for="locadouro">Locadouro:</label>
-                    <input type="text" name="locadouro" id="locadouro">
+                    <label for="logradouro">Locadouro:</label>
+                    <input type="text" name="logradouro" id="logradouro">
                 </li>
                 <li>
                     <label for="complemento">Complemento:</label>
@@ -110,23 +110,26 @@
                     <textarea name="biografia" id="biografia" cols="80" rows="20"></textarea>
                 </li>
                 <li>
-                    <label for="genero">Gênero</label>
+                    <label for="genero">Gênero:</label>
                     <input type="radio" name="sexo" id="masculino" value="Masculino">
                     <label for="masculino">Masculino</label>
                     <input type="radio" name="sexo" id="feminino" value="Feminino">
                     <label for="feminino">Feminino</label>
+                    <input type="radio" name="sexo" id="outro" value="Outro">
+                    <label for="outro">Outro</label>
+                   
                 </li>
             </ul>
         </fieldset>
         <fieldset>
             <ul>
                 <li>
-                    <input type="checkbox" name="confirmação" id="confirmação" value="Confirmação">
-                    <label for="confirmação">Tudo bem em enviar e-mail ocasionais com promoções de outros usuarios.</label>
+                    <input type="checkbox" name="confirmacao" id="confirmacao" value="confirmacao">
+                    <label for="confirmacao">Tudo bem em enviar e-mail ocasionais com promoções de outros usuarios.</label>
                 </li>
                 <li>
-                    <input type="checkbox" name="confirmação1" id="confirmação1" value="Confirmação1">
-                    <label for="confirmação1">Tudo bem em enviar e-mails ocasionais com promoções sobre outros produtos.</label>
+                    <input type="checkbox" name="confirmacao1" id="confirmacao1" value="confirmacao1">
+                    <label for="confirmacao1">Tudo bem em enviar e-mails ocasionais com promoções sobre outros produtos.</label>
                 </li>
             </ul>
         </fieldset>
@@ -136,10 +139,6 @@
         </form>
     </main>
     <footer></footer>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-    <script>
-         $('#cep').mask('00000-000');
-    </script>
+    
 </body>
 </html>
