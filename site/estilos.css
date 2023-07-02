@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+body{
+    display: flex;
+    
+    
+    flex-direction: column;
+    
+    
+    align-items: center;
+}
+
+h1{
+    color: #000;
+    text-decoration: underline;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto','Times New Roman', Times, serif;
+}
+header{
+    background-color: aqua;
+}
+nav a{
+    font-family: 'Roboto','Times New Roman', Times, serif;
+    font-weight: 900;
+    color: #000;
+}
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: valor;
+    letter-spacing: valor;
+    text-indent: 2em;
+}
+.imgflex {
+    display: flex;
+    justify-content:center;
+}
+figcaption {
+    display: flex;
+    justify-content:center;
+}
+
+
