@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/script.js" defer></script>
     <title>Contato</title>
 </head>
@@ -34,9 +35,75 @@
         </nav>
     </header>
     <main tabindex="0" class="contentmain" onfocus="closeSidebar()" id="contentmain">
-        <h2>Deixe aqui seu suas sugestões</h2>
-        <form action="sugetao" method="post"></form>
+        
+        <div >
+            <h1 class="contact">Contato</h1>
+            <p>Deixe aqui seu suas sugestõess</p>
+        </div>
+        <div class="contact">
+            <form action="#" method="post" class="form-contat">
+                <ul class="inputs-contact">
+                    <li class="input-caixa-contact">
+                        <label for="assunto">Assunto<span>*</span></label>
+                        <fieldset>
+                            <input type="text" id="assunto" name="assunto" required>
+                        </fieldset>
+                    </li>
+                    <li class="input-caixa-contact">
+                        <label for="nome">Nome<span>*</span></label>
+                        <fieldset>
+                            <input type="text" id="nome" name="nome" required>
+                        </fieldset>
+                    </li>
+                    <li class="input-caixa-contact">
+                        <label for="email">E-mail<span>*</span></label>
+                        <fieldset>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </fieldset>
+                    </li>
+                    <li class="input-caixa-contact">
+                        <label for="assunto_option">Página<span>*</span></label>
+                        <fieldset>
+                            <select id="assunto_option" name="assunto_option">
+                                <option value="duvida">7 Maravilhas Antigas</option>
+                                <option value="sugestao">7 Marvilhas Moderno</option>
+                                <option value="sugestao">7 Praias Mais Bonitas</option>
+                            </select>
+                        </fieldset>
+                    </li>
+                    <li class="input-caixa-contact">
+                        <label for="menssagem">Mensagem<span>*</span></label>
+                        <p>Digite aqui, a sua mensagem</p>
+                        <fieldset>
+                            <textarea id="menssagem" name="menssagem" rows="10" cols="50" maxlength="1000"></textarea>
+                        </fieldset>
+                    </li>
+                </ul>
+                <div class="enviar_contact">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
     </main>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Logo</h1>
+            <P>É tudo sobre seus sonhos</P>
+            <div id="footer_social">
+                <a href="#" class="footer_link" id="instagram">
+                <i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="footer_link" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="footer_link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i></a>
+                <a href="contato.html" class="footer_link" id="envelope">
+                <i class="fa-regular fa-envelope"></i></a> 
+            </div>
+            <div class="footer_copyright">
+                &#169 direitos reservados 
+                Tyago Santos
+            </div>
+        </div>
+    </div>            
 </body>
-<footer></footer>
 </html>
