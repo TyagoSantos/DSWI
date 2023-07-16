@@ -69,10 +69,9 @@ body{
     display: none;
 }
 
-h1{
+h2{
     color: #000;
-    text-decoration: underline;
-    margin: 5%;
+    margin-bottom: 2.5rem;    
 }
 
 .content{ 
