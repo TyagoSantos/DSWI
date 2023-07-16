@@ -7,72 +7,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
+    <script src="js/script.js" defer></script>
     <title>7 Maravilhas Antigas</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="home.html">Página Incial</a>
-            <a href="maravilhas_antigas.html">7 Maravilhas Antigas</a>
-            <a href="maravilhas_modernas.html">7 Marvilhas Moderno<odernas</a>
+    <header class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="imagens/favicon.ico" alt="Logo GN" class="img_logo_header">
+        </div>
+        <nav class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="home.html" >Home</a>
+            <a href="maravilhas_antigas.html" class="active">7 Maravilhas Antigas</a>
+            <a href="maravilhas_modernas.html">7 Marvilhas Moderno</a>
             <a href="praias.html">7 Praias Mais Bonitas</a>
-            <a href="cadastro.html">Cadastro</a>
+            <a href="contato.html">Contato</a>
         </nav>
     </header>
-    <main>
-        <h1>7 maravilhas do mundo antigo</h1>
-        <p>As sete maravilhas do mundo antigo são construções que Filão de Bizâncio, no século III a.C., afirmou serem merecedoras de serem vistas por todos.</p>
-        <img src="imagens/sete-maravilhas-mundo-antigo.webp" alt="Imagens das 7 maravilhas do mundo antigo" title="Imagens das 7 maravilhas do mundo antigo" width="600" height="320"> 
-        <figcaption>As sete maravilhas do mundo antigo são grandes construções listadas por Filão de Bizâncio.</figcaption>
-        <h1>O que são as sete maravilhas do mundo antigo?</h1>
-        <p>As sete maravilhas do mundo antigo são construções da Antiguidade listadas como grandes obras da humanidade. A lista tradicional que menciona as diferentes construções foi elaborada por um grego que se identificava como Filão de Bizâncio. Esse autor grego viveu no século III a.C., legando essa lista como sua grande obra.</p>
-        <p>A lista de Filão de Bizâncio não foi a única do tipo realizada na Antiguidade, havendo outras de autores como Heródoto, mas foi a lista dele que se tornou a mais popular, principalmente pela quantidade de detalhes. A lista elaborada por esse grego tinha a intenção de citar lugares que as pessoas deveriam conhecer/ver.</p>
-        <p>As sete maravilhas lisadas por ele são a Grande Pirâmide de Gizé, os Jardins Suspensos da Babilônia, a Estátua de Zeus, o Templo de Ártemis, o Mausoléu de Halicarnasso, o Colosso de Rodes e o Farol de Alexandria. A seguir, veremos sobre cada uma delas.</p>
-        <h1>Grande Pirâmide de Gizé</h1>
-        <img src="imagens/grande-piramide-gize.webp" alt="Grande Pirâmide de Gizé, no Egito."title ="Grande Pirâmide de Gizé">
-        <figcaption>Grande Pirâmide de Gizé, no Egito.</figcaption>
-        <p>A Grande Pirâmide de Gizé é, provavelmente, <strong>a mais famosa de todas as maravilhas que foram listadas por Filão</strong>. Isso porque de todas as sete maravilhas, a Grande Pirâmide de Gizé é a única que sobreviveu à ação do tempo, estando localizada nos arredores da cidade de Cairo, capital do Egito, sendo bastante visitada por turistas de todas as partes do planeta.</p>
-        <p>Essa pirâmide foi construída durante o reinado de Quéops (2589 a.C. a 2566 a.C.), faraó da quarta dinastia egípcia. Lembrando que as pirâmides eram tumbas, e a construção dessa pirâmide se estendeu por cerca de 20 anos, possuindo um total de 146 metros de altura, uma base com 230 metros de comprimento e cerca de 2 milhões de blocos de pedra.</p>
-        <h1>Jardins Suspensos da Babilônia</h1>
-        <img src="imagens/jardins-suspensos-babilonia.webp" alt="Representação dos Jardins Suspensos da Babilônia." title="Representação dos Jardins Suspensos da Babilônia.">
-        <figcaption>Representação dos Jardins Suspensos da Babilônia.</figcaption>
-        <p>Os Jardins Suspensos da Babilônia foram s<strong>upostamente construídos durante o reinado de Nabucodonosor</strong>, rei de Império Babilônico entre os anos de 605 a.C. e 562 a.C. Existe uma grande controvérsia acerca da existência dessa construção, porque não existem muitas evidências que comprovem que ela de fato existiu.</p>
-        <p>Os relatos que mencionam os Jardins Suspensos da Babilônia são de viajantes que passaram pela região, e não existem fontes babilônicas que citem essa construção. A narrativa sobre essa construção menciona que Nabucodonosor ordenou construir um prédio com vários andares e alocar enormes jardins neles. Diz-se que o rei babilônico f<strong>ez isso para amenizar a tristeza de sua esposa, que sentia falta das montanhas e florestas de sua terra.</strong></p>
-        <h1>Estátua de Zeus</h1>
-        <img src="imagens/estatua-zeus.webp" alt="Estátua de Zeus" title="Representação da Estátua de Zeus.">
-        <figcaption>Representação da Estátua de Zeus.</figcaption>
-        <p>A Estátua de Zeus e<strong>stava localizada em Olímpia, cidade que tinha em <a href="https://www.historiadomundo.com.br/grega/zeus.htm" target="_blank" rel="external">Zeus</a> o seu deus patrono</strong>. Essa estátua foi construída por um escultor chamado Fídias, sendo produzida em marfim e ouro. Viajantes que passavam pela cidade grega iam até o templo em que estava a estátua para prestar homenagem a esse deus grego.</p>
-        <p>A estátua ficava em um templo que havia sido construído no século V a.C., <strong>media 12 metros de altura</strong> e foi construída por volta de 435 a.C. A ascensão do cristianismo fez com que o Templo de Zeus e a estátua fossem abandonados. Por volta do século V d.C., a estátua foi levada para Constantinopla, onde foi perdida e provavelmente destruída por algum terremoto.</p>
-        <h1>Templo de Ártemis</h1>
-        <img src="imagens/templo-artemis.webp" alt="Representação do Templo de Ártemis." title="Representação do Templo de Ártemis.">
-        <figcaption>Representação do Templo de Ártemis.</figcaption>
-        <p>O Templo de Ártemis, <strong>construído em homenagem à deusa grega <a href="https://www.historiadomundo.com.br/grega/artemis.htm" target="_blank" rel="external
-        ">Ártemis</a>, estava localizado em Éfeso</strong>, cidade grega na Ásia Menor. Sua construção foi finalizada em 550 a.C., possuindo 129 metros de comprimento, 69 metros de largura um total de 127 colunas com 18 metros de altura.</p>
-        <p><strong>No interior do templo estava uma estátua de Ártemis</strong>, que, assim como a estátua de Zeus em Olímpia, era local de visitação, onde muitos deixavam oferendas. A construção desse templo foi financiada pelo rei da Lídia, o rei Creso.</p>
-        <p>Ao longo da história, o Templo de Ártemis foi <strong>destruído diversas vezes:</strong></p>
-        <ul>
-            <li>Em 21 de julho de 356 a.C., um homem chamado Heróstrato incendiou o templo com o objetivo de que seu nome fosse lembrado pela eternidade.</li>
-            <li>Depois de sua reconstrução, foi destruído durante um ataque dos godos a Éfeso em 267 d.C.</li>
-            <li>Reconstruído novamente, o templo foi destruído por um ataque promovido por cristãos liderados por São João Crisóstomo, em 401.</li>
-        </ul>
-        <h1>Mausoléu de Halicarnasso</h1>
-        <img src="imagens/mausoleu-halicarnasso.webp" alt="Mausoléu de Halicarnasso
-        "title="Mausoléu de Halicarnasso
-        ">
-        <figcaption>Representação do Mausoléu de Halicarnasso.</figcaption>
-        <p>O Mausoléu de Halicarnasso foi <strong>uma tumba construída para Mausulo</strong>luída em 351 a.C. O nome do sátrapa acabou nomeando essa construção. A morte de Mausulo aconteceu em 353 a.C., sendo que a tumba dele foi construída por dois arquitetos gregos chamados Sátiro e Pítis.</p>
-        <p>A construção do mausoléu foi coordenada pela esposa de Mausulo, chamada Artemísia. Ela <strong>queria que seu marido tivesse um imponente lugar de descanso</strong> e por isso autorizou a construção de uma tumba gigantesca em Halicarnasso, cidade grega na Ásia Menor. O Mausoléu de Halicarnasso possuía 41 metros de altura, sendo destruído tempos depois pela ação de terremotos.</p>
-        <p>As ruínas do mausoléu ficaram abandonadas até o século XV, mas no ano de 1494, as pedras que fizeram parte da construção foram utilizadas para a construção de um castelo em Bodrum (atual cidade que fica no local onde ficava Halicarnasso).</p>
-        <h1>Colosso de Rodes</h1>
-        <img  class="imgflex"src="imagens/colosso-rodes.webp" alt="Colosso de Rodes" title="Colosso de Rodes">
-        <figcaption>Representação do Colosso de Rodes.</figcaption>
-        <p>O Colosso de Rodes foi uma grande <strong>estátua construída em homenagem a Hélio, o deus Sol na religiosidade grega e o patrono da cidade de Rodes</strong> na Antiguidade. Acredita-se que sua construção tenha sido realizada entre os anos de 292 a.C. e 280 a.C., localizada um pouco acima do porto de Rodes. O construtor dessa estátua foi Carés de Lindos.</p>
-        <p>A estátua teria sido construída como butim de guerra depois que invasores abandonaram Rodes, deixando para trás uma grande quantidade de equipamentos e recursos. O Colosso de Rodes tinha <strong>33 metros de altura</strong>, mas teve vida curta, sendo destruído por um terremoto que aconteceu por volta de 228 a.C. As ruínas da estátua ficaram em Rodes até o século VII d.C., quando foram vendidas e derretidas por um comerciante.</p>
-        <h1>Farol de Alexandria</h1>     
-        <img src="imagens/farol-alexandria.webp" alt="Farol de Alexandria" title="Farol de Alexandria">
-        <figcaption>Representação do Farol de Alexandria.</figcaption>
-        <p>O Farol de Alexandria foi <strong>construído na ilha de Faros, localizada nas proximidades da cidade de <a href="https://www.historiadomundo.com.br/idade-antiga/alexandria.htm" target="_blank" rel="external">Alexandria</a></strong>, uma das cidades mais importantes do Egito durante o período Helenístico. Foi construído durante o reinado de Ptolomeu II, e o responsável por sua construção foi um arquiteto chamado Sóstrato de Cnido.</p>
-        <p>A construção do Farol de Alexandria se estendeu durante o período de 300 a.C. a 280 a.C. Ele <strong>possuía cerca de 134 metros de altura</strong>, sendo uma das construções mais altas da Antiguidade, e a luz desse farol podia ser vista a mais de 50 quilômetros de distância. O Farol de Alexandria foi destruído por uma sucessão de terremotos que aconteceram em 956, 1303, 1323 e 1480, quando foi destruído definitivamente.</p>
+    <main tabindex="0" class="contentmain" onfocus="closeSidebar()" id="contentmain">
+        <div class="content">
+            <div>
+                <h1>7 maravilhas do mundo antigo</h1>
+                <p>As sete maravilhas do mundo antigo são construções que Filão de Bizâncio, no século III a.C., afirmou serem merecedoras de serem vistas por todos.</p>
+                <img src="imagens/sete-maravilhas-mundo-antigo.webp" alt="Imagens das 7 maravilhas do mundo antigo" title="Imagens das 7 maravilhas do mundo antigo" width="600" height="320">
+                <figcaption>As sete maravilhas do mundo antigo são grandes construções listadas por Filão de Bizâncio.</figcaption>
+            </div>
+            <div>
+                <h1>O que são as sete maravilhas do mundo antigo?</h1>
+                <p>As sete maravilhas do mundo antigo são construções da Antiguidade listadas como grandes obras da humanidade. A lista tradicional que menciona as diferentes construções foi elaborada por um grego que se identificava como Filão de Bizâncio. Esse autor grego viveu no século III a.C., legando essa lista como sua grande obra.</p>
+                <p>A lista de Filão de Bizâncio não foi a única do tipo realizada na Antiguidade, havendo outras de autores como Heródoto, mas foi a lista dele que se tornou a mais popular, principalmente pela quantidade de detalhes. A lista elaborada por esse grego tinha a intenção de citar lugares que as pessoas deveriam conhecer/ver.</p>
+                <p>As sete maravilhas lisadas por ele são a Grande Pirâmide de Gizé, os Jardins Suspensos da Babilônia, a Estátua de Zeus, o Templo de Ártemis, o Mausoléu de Halicarnasso, o Colosso de Rodes e o Farol de Alexandria. A seguir, veremos sobre cada uma delas.</p>
+            </div>
+            <div>
+                <h1>Grande Pirâmide de Gizé</h1>
+                <img src="imagens/grande-piramide-gize.webp" alt="Grande Pirâmide de Gizé, no Egito."title ="Grande Pirâmide de Gizé">
+                <strong>
+                    <figcaption>Grande Pirâmide de Gizé, no Egito.</figcaption>
+                </strong>
+                <p>A Grande Pirâmide de Gizé é, provavelmente, <strong>a mais famosa de todas as maravilhas que foram listadas por Filão</strong>. Isso porque de todas as sete maravilhas, a Grande Pirâmide de Gizé é a única que sobreviveu à ação do tempo, estando localizada nos arredores da cidade de Cairo, capital do Egito, sendo bastante visitada por turistas de todas as partes do planeta.</p>
+                <p>Essa pirâmide foi construída durante o reinado de Quéops (2589 a.C. a 2566 a.C.), faraó da quarta dinastia egípcia. Lembrando que as pirâmides eram tumbas, e a construção dessa pirâmide se estendeu por cerca de 20 anos, possuindo um total de 146 metros de altura, uma base com 230 metros de comprimento e cerca de 2 milhões de blocos de pedra.</p>
+            </div>
+            <div>
+                <h1>Jardins Suspensos da Babilônia</h1>
+                <img src="imagens/jardins-suspensos-babilonia.webp" alt="Representação dos Jardins Suspensos da Babilônia." title="Representação dos Jardins Suspensos da Babilônia.">
+                <strong>
+                    <figcaption>Representação dos Jardins Suspensos da Babilônia.</figcaption>
+                </strong>
+                <p>Os Jardins Suspensos da Babilônia foram s<strong>upostamente construídos durante o reinado de Nabucodonosor</strong>, rei de Império Babilônico entre os anos de 605 a.C. e 562 a.C. Existe uma grande controvérsia acerca da existência dessa construção, porque não existem muitas evidências que comprovem que ela de fato existiu.</p>
+                <p>Os relatos que mencionam os Jardins Suspensos da Babilônia são de viajantes que passaram pela região, e não existem fontes babilônicas que citem essa construção. A narrativa sobre essa construção menciona que Nabucodonosor ordenou construir um prédio com vários andares e alocar enormes jardins neles. Diz-se que o rei babilônico f<strong>ez isso para amenizar a tristeza de sua esposa, que sentia falta das montanhas e florestas de sua terra.</strong></p>
+            </div>
+            <div>
+                <h1>Estátua de Zeus</h1>
+                <img src="imagens/estatua-zeus.webp" alt="Estátua de Zeus" title="Representação da Estátua de Zeus.">
+                <strong>
+                    <figcaption>Representação da Estátua de Zeus.</figcaption>
+                </strong>
+                <p>A Estátua de Zeus e<strong>stava localizada em Olímpia, cidade que tinha em <a href="https://www.historiadomundo.com.br/grega/zeus.htm" target="_blank" rel="external">Zeus</a> o seu deus patrono</strong>. Essa estátua foi construída por um escultor chamado Fídias, sendo produzida em marfim e ouro. Viajantes que passavam pela cidade grega iam até o templo em que estava a estátua para prestar homenagem a esse deus grego.</p>
+                <p>A estátua ficava em um templo que havia sido construído no século V a.C., <strong>media 12 metros de altura</strong> e foi construída por volta de 435 a.C. A ascensão do cristianismo fez com que o Templo de Zeus e a estátua fossem abandonados. Por volta do século V d.C., a estátua foi levada para Constantinopla, onde foi perdida e provavelmente destruída por algum terremoto.</p>
+            </div>
+            <div>
+                <h1>Templo de Ártemis</h1>
+                <img src="imagens/templo-artemis.webp" alt="Representação do Templo de Ártemis." title="Representação do Templo de Ártemis.">
+                <strong>
+                    <figcaption>Representação do Templo de Ártemis.</figcaption>
+                </strong>
+                <p>O Templo de Ártemis, <strong>construído em homenagem à deusa grega <a href="https://www.historiadomundo.com.br/grega/artemis.htm" target="_blank" rel="external
+                ">Ártemis</a>, estava localizado em Éfeso</strong>, cidade grega na Ásia Menor. Sua construção foi finalizada em 550 a.C., possuindo 129 metros de comprimento, 69 metros de largura um total de 127 colunas com 18 metros de altura.</p>
+                <p><strong>No interior do templo estava uma estátua de Ártemis</strong>, que, assim como a estátua de Zeus em Olímpia, era local de visitação, onde muitos deixavam oferendas. A construção desse templo foi financiada pelo rei da Lídia, o rei Creso.</p>
+                <p>Ao longo da história, o Templo de Ártemis foi <strong>destruído diversas vezes:</strong></p>
+                <ul>
+                    <li>Em 21 de julho de 356 a.C., um homem chamado Heróstrato incendiou o templo com o objetivo de que seu nome fosse lembrado pela eternidade.</li>
+                    <li>Depois de sua reconstrução, foi destruído durante um ataque dos godos a Éfeso em 267 d.C.</li>
+                    <li>Reconstruído novamente, o templo foi destruído por um ataque promovido por cristãos liderados por São João Crisóstomo, em 401.</li>
+                </ul>
+            </div>
+            <div>
+                <h1>Mausoléu de Halicarnasso</h1>
+                <img src="imagens/mausoleu-halicarnasso.webp" alt="Mausoléu de Halicarnasso
+                "title="Mausoléu de Halicarnasso
+                ">
+                <strong>
+                    <figcaption>Representação do Mausoléu de Halicarnasso.</figcaption>
+                </strong>
+                <p>O Mausoléu de Halicarnasso foi <strong>uma tumba construída para Mausulo</strong>luída em 351 a.C. O nome do sátrapa acabou nomeando essa construção. A morte de Mausulo aconteceu em 353 a.C., sendo que a tumba dele foi construída por dois arquitetos gregos chamados Sátiro e Pítis.</p>
+                <p>A construção do mausoléu foi coordenada pela esposa de Mausulo, chamada Artemísia. Ela <strong>queria que seu marido tivesse um imponente lugar de descanso</strong> e por isso autorizou a construção de uma tumba gigantesca em Halicarnasso, cidade grega na Ásia Menor. O Mausoléu de Halicarnasso possuía 41 metros de altura, sendo destruído tempos depois pela ação de terremotos.</p>
+                <p>As ruínas do mausoléu ficaram abandonadas até o século XV, mas no ano de 1494, as pedras que fizeram parte da construção foram utilizadas para a construção de um castelo em Bodrum (atual cidade que fica no local onde ficava Halicarnasso).</p>
+            </div>
+            <div>
+                <h1>Colosso de Rodes</h1>
+                <img  class="imgflex"src="imagens/colosso-rodes.webp" alt="Colosso de Rodes" title="Colosso de Rodes">
+                <strong>
+                    <figcaption>Representação do Colosso de Rodes.</figcaption>
+                </strong>
+                <p>O Colosso de Rodes foi uma grande <strong>estátua construída em homenagem a Hélio, o deus Sol na religiosidade grega e o patrono da cidade de Rodes</strong> na Antiguidade. Acredita-se que sua construção tenha sido realizada entre os anos de 292 a.C. e 280 a.C., localizada um pouco acima do porto de Rodes. O construtor dessa estátua foi Carés de Lindos.</p>
+                <p>A estátua teria sido construída como butim de guerra depois que invasores abandonaram Rodes, deixando para trás uma grande quantidade de equipamentos e recursos. O Colosso de Rodes tinha <strong>33 metros de altura</strong>, mas teve vida curta, sendo destruído por um terremoto que aconteceu por volta de 228 a.C. As ruínas da estátua ficaram em Rodes até o século VII d.C., quando foram vendidas e derretidas por um comerciante.</p>
+            </div>
+            <div>
+                <h1>Farol de Alexandria</h1>
+                <img src="imagens/farol-alexandria.webp" alt="Farol de Alexandria" title="Farol de Alexandria">
+                <strong>
+                    <figcaption>Representação do Farol de Alexandria.</figcaption>
+                </strong>
+                <p>O Farol de Alexandria foi <strong>construído na ilha de Faros, localizada nas proximidades da cidade de <a href="https://www.historiadomundo.com.br/idade-antiga/alexandria.htm" target="_blank" rel="external">Alexandria</a></strong>, uma das cidades mais importantes do Egito durante o período Helenístico. Foi construído durante o reinado de Ptolomeu II, e o responsável por sua construção foi um arquiteto chamado Sóstrato de Cnido.</p>
+                <p>A construção do Farol de Alexandria se estendeu durante o período de 300 a.C. a 280 a.C. Ele <strong>possuía cerca de 134 metros de altura</strong>, sendo uma das construções mais altas da Antiguidade, e a luz desse farol podia ser vista a mais de 50 quilômetros de distância. O Farol de Alexandria foi destruído por uma sucessão de terremotos que aconteceram em 956, 1303, 1323 e 1480, quando foi destruído definitivamente.</p>
+            </div>
+        </div>
     </main>
 </body>
 <footer></footer>

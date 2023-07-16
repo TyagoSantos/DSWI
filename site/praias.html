@@ -7,72 +7,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
+    <script src="js/script.js" defer></script>
     <title>7 Praias Mais Bonitas</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="home.html">Página Incial</a>
+    <header class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="imagens/favicon.ico" alt="Logo GN" class="img_logo_header">
+        </div>
+        <nav class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="home.html">Home</a>
             <a href="maravilhas_antigas.html">7 Maravilhas Antigas</a>
-            <a href="maravilhas_modernas.html">7 Marvilhas Moderno<odernas</a>
-            <a href="praias.html">7 Praias Mais Bonitas</a>
-            <a href="cadastro.html">Cadastro</a>
+            <a href="maravilhas_modernas.html">7 Marvilhas Moderno</a>
+            <a href="praias.html" class="active">7 Praias Mais Bonitas</a>
+            <a href="contato.html">Contato</a>
         </nav>
     </header>
-    <main>
-        <h1>Grace Bay Beach - Ilhas Turcas e Caicos</h1>
-        <img src="imagens/GraceBayBeach.webp" alt="Grace Bay Beach" title="Grace Bay Beach">
-        <figcaption>A Grace Bay Beach é, segundo os viajantes, a praia mais bonita do mundo.</figcaption>
-        <p>Provavelmente você nunca ouviu falar das Ilhas Turks e Caicos, mas garantimos que vale a pena conhecer o pequeno arquipélago no Caribe. Afinal, uma de suas praias foi a eleita a melhor do mundo!</p>
-        <p>E não é a primeira vez que a praia de Grace Bay aparece no ranking das melhores praias do mundo. Afinal, ela tem tudo que a maioria dos turistas amam: águas quentes e translúcidas, areia branca e muita vida marinha.</p>
-        <p>A barreira de coral no Princess Alexandra Marine Park é um dos melhores pontos de mergulho da região. A maioria das hospedagens fica na ilha principal de Providenciales, mas também é possível encontrar opções em uma das outras 8 ilhas que também são habitadas.</p>
-        <h1>Varadero Beach - Varadero, Cuba</h1>
-        <img src="imagens/VaraderoBeach.webp" alt="Varadero Beach" title="Varadero Beach">
-        <figcaption>A apenas 2h30 de Havana você encontra Varadero, um paraíso no Caribe!</figcaption>
-        <p>Um dos principais diferenciais de Varadero é seu mar azul turquesa que, segundo os visitantes, é um dos mais lindos do mundo. Além dos resorts all-inclusive, a praia também tem estrutura para você curtir sem preocupações.</p>
-        <p>Para entrar no país é necessário passaporte válido, passagens de ida e volta, comprovantes de hospedagem, visto de turista e apólice de seguro viagem.</p>
-        <h1>Turquoise Bay - Exmouth, Austrália</h1>
-        <img src="imagens/TurquoiseBay.webp" alt="Turquoise Bay" title="Turquoise Bay">
-        <figcaption>A Turquoise Bay fica em uma região isolada da Austrália e é perfeita para ver a vida marinh</figcaption>
-        <p>O terceiro lugar da lista fica na Austrália Ocidental, no Cape Range National Park na cidade de Exmouth. A “Baía Turquesa”, fica próxima ao recife de Ningaloo.</p>
-        <p>Ela é uma das melhores praias australianas para praticar snorkel, já que as águas são rasas, quentes e cheias de corais, tartarugas marinhas, arraias, golfinhos e estrelas do mar.</p>
-        <p>O melhor ponto de mergulho da segunda maior barreira de corais da Austrália fica na extremidade sul, só tenha atenção para não nadar para a parte de trás do recife Ningaloo, onde as ondas quebram.</p>
-        <p>A melhor época para conhecer a praia é durante o verão, entre dezembro e fevereiro. Durante o inverno, entre junho e agosto, as temperaturas ficam mais baixas e não será tão fácil curtir a praia. </p>
-        <h1>Quarta Praia - Morro de São Paulo, Bahia, Brasil</h1>
-        <img src="imagens/Morro.webp" alt="Morro de São Paulo" title="Morro de São Paulo">
-        <figcaption>A primeira colocação brasileira no ranking é uma praia pacata na Bahia</figcaption>
-        <p>A primeira praia brasileira aparece em quarto lugar! A Quarta Praia, em Morro de São Paulo, pertencente a Ilha de Tinharé na Bahia e fica a cerca de 2 horas de Salvador no percurso de catamarã.</p>
-        <p>A região é uma das mais lindas do Brasil, e tem praias para todos os gostos. A primeira praia tem mais ondas e é onde chega a tirolesa. A segunda praia é a mais badalada, cheia de restaurantes.</p>
-        <p>A terceira e a quarta praias são as mais isoladas. Na terceira partem os passeios de barco para Boipeba e Garapuá e a Quarta Praia é um verdadeiro paraíso para quem ama piscinas naturais.</p>
-        <p>Na maré baixa várias delas se formam e o cenário é lindo. Não há muita estrutura na quarta praia, o ideal é ir preparado para relaxar e ver poucas pessoas. Existem resorts e hotéis à beira-mar para quem quer curtir os dias de tranquilidade.</p>
-        <p>E se aguentar caminhar mais um pouco, não deixe de conhecer a mais desconhecida de todas: a quinta praia, ou praia do Encanto!</p>
-        <h1>Eagle Beach - Palm/Eagle Beach, Aruba</h1>
-        <img src="imagens/EagleBeach.webp" alt="Eagle Beach" title="Eagle Beach">
-        <figcaption>Aruba é um destino famoso para quem quer curtir as praias caribenhas em qualquer época do ano!</figcaption>
-        <p>Vizinha da badalada Palm Beach, Eagle Beach é tranquila e está fora da rota dos furacões do Caribe!</p>
-        <p>Isso significa que você pode visitar Aruba o ano inteiro para conferir as belíssimas praias da ilha holandesa. A ilha conhecida como “One Happy Island” ou “uma ilha feliz”, não exige visto dos brasileiros (apenas se fizer conexão nos Estados Unidos). Mas não esqueça da vacina contra a febre amarela, ela é obrigatória!</p>
-        <p>Além das lindas praias, outras atrações de Aruba são:</p>
-        <ul>
-            <li>Farol Califórnia que tem mais de 100 anos;</li>
-            <li>Parque Nacional Arikok;</li>
-            <li>Ruínas de Bushiribana;</li>
-            <li>Cassinos;</li>
-            <li>Capela Alto Vista;</li>
-            <li>Centro de Oranjestad.</li>
-        </ul>
-        <h1>Radhanagar Beach - Havelock Island, Índia</h1>
-        <img src="imagens/Radhanagar.webp" alt="Radhanagar Beach" title="Radhanagar Beach">
-        <figcaption>A Radhanagar Beach é desconhecida por muitos turistas, mas sem dúvida vale a visita!</figcaption>
-        <p>Talvez a Índia não seja conhecida por ser um destino de praia, mas vamos te mostrar que o país vai te surpreender! O golfo de Bengala é a maior baía do mundo e lá existem mais de 500 ilhas repletas de lindas praias.</p>
-        <p>A praia de Radhanagar, na pequena ilha de Havelock pertencente às Ilhas de Andaman e Nicobar, é um refúgio remoto com areia macia, águas transparentes e um pôr do sol de tirar o fôlego.</p>
-        <p>Na região há grandes hotéis e resorts, mas o clima continua paradisíaco e tranquilo. Aproveite os meses entre novembro e fevereiro para conhecer as lindas praias indianas.</p>
-        <p>Evite os meses do verão indiano, entre junho e setembro, que além de excessivamente quentes são bastante chuvosos devido às monções. E não esqueça de solicitar o seu visto indiano para conhecer o país!</p>
-        <h1>Baía do Sancho - Fernando de Noronha, Pernambuco, Brasil</h1>
-        <img src="imagens/Baí doSancho.webp" alt="Baía do Sancho" title="Baía do Sancho">
-        <figcaption>A Baía do Sancho é um tesouro escondido em Fernando de Noronha.</figcaption>
-        <p>A próxima participação do Brasil na lista é a Praia da Baía do Sancho, no arquipélago de Fernando de Noronha.</p>
-        <p>A praia pertencente ao estado de Pernambuco já foi escolhida várias vezes como a praia mais bonita do mundo. A areia fofa, águas cristalinas e abundante vida marinha só pode ser acessada de barco ou por uma escada íngreme no penhasco.</p>
-        <p>Mas garantimos que o percurso vale a pena! É um dos lugares mais cobiçados para praticar mergulho. O acesso a praia é controlado para preservar o local, e é necessário pagar uma taxa de R$ 75,00. </p>
+    <main tabindex="0" class="contentmain" onfocus="closeSidebar()" id="contentmain">
+        <div class="content">
+            <div>
+                <h1>Grace Bay Beach - Ilhas Turcas e Caicos</h1>
+                <iframe width="560" height="400" src="https://www.youtube.com/embed/-HcxuU61Vig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <img src="imagens/GraceBayBeach.webp" alt="Grace Bay Beach" title="Grace Bay Beach">
+                <strong>
+                    <figcaption>A Grace Bay Beach é, segundo os viajantes, a praia mais bonita do mundo.</figcaption>
+                </strong>
+                <p>Provavelmente você nunca ouviu falar das Ilhas Turks e Caicos, mas garantimos que vale a pena conhecer o pequeno arquipélago no Caribe. Afinal, uma de suas praias foi a eleita a melhor do mundo!</p>
+                <p>E não é a primeira vez que a praia de Grace Bay aparece no ranking das melhores praias do mundo. Afinal, ela tem tudo que a maioria dos turistas amam: águas quentes e translúcidas, areia branca e muita vida marinha.</p>
+                <p>A barreira de coral no Princess Alexandra Marine Park é um dos melhores pontos de mergulho da região. A maioria das hospedagens fica na ilha principal de Providenciales, mas também é possível encontrar opções em uma das outras 8 ilhas que também são habitadas.</p>
+            </div>
+            <div>
+                <h1>Varadero Beach - Varadero, Cuba</h1>
+                <iframe width="560" height="400" src="https://www.youtube.com/embed/Ob2ZxBMEM7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <img src="imagens/VaraderoBeach.webp" alt="Varadero Beach" title="Varadero Beach">
+                <strong>
+                    <figcaption>A apenas 2h30 de Havana você encontra Varadero, um paraíso no Caribe!</figcaption>
+                </strong>
+                <p>Um dos principais diferenciais de Varadero é seu mar azul turquesa que, segundo os visitantes, é um dos mais lindos do mundo. Além dos resorts all-inclusive, a praia também tem estrutura para você curtir sem preocupações.</p>
+                <p>Para entrar no país é necessário passaporte válido, passagens de ida e volta, comprovantes de hospedagem, visto de turista e apólice de seguro viagem.</p>
+            </div>
+            <div>
+                <h1>Turquoise Bay - Exmouth, Austrália</h1>
+                <img src="imagens/TurquoiseBay.webp" alt="Turquoise Bay" title="Turquoise Bay">
+                <strong>
+                    <figcaption>A Turquoise Bay fica em uma região isolada da Austrália e é perfeita para ver a vida marinh</figcaption>
+                </strong>
+                <p>O terceiro lugar da lista fica na Austrália Ocidental, no Cape Range National Park na cidade de Exmouth. A “Baía Turquesa”, fica próxima ao recife de Ningaloo.</p>
+                <p>Ela é uma das melhores praias australianas para praticar snorkel, já que as águas são rasas, quentes e cheias de corais, tartarugas marinhas, arraias, golfinhos e estrelas do mar.</p>
+                <p>O melhor ponto de mergulho da segunda maior barreira de corais da Austrália fica na extremidade sul, só tenha atenção para não nadar para a parte de trás do recife Ningaloo, onde as ondas quebram.</p>
+                <p>A melhor época para conhecer a praia é durante o verão, entre dezembro e fevereiro. Durante o inverno, entre junho e agosto, as temperaturas ficam mais baixas e não será tão fácil curtir a praia. </p>
+            </div>
+            <div>
+                <h1>Quarta Praia - Morro de São Paulo, Bahia, Brasil</h1>
+                <img src="imagens/Morro.webp" alt="Morro de São Paulo" title="Morro de São Paulo">
+                <strong>
+                    <figcaption>A primeira colocação brasileira no ranking é uma praia pacata na Bahia</figcaption>
+                </strong>
+                <p>A primeira praia brasileira aparece em quarto lugar! A Quarta Praia, em Morro de São Paulo, pertencente a Ilha de Tinharé na Bahia e fica a cerca de 2 horas de Salvador no percurso de catamarã.</p>
+                <p>A região é uma das mais lindas do Brasil, e tem praias para todos os gostos. A primeira praia tem mais ondas e é onde chega a tirolesa. A segunda praia é a mais badalada, cheia de restaurantes.</p>
+                <p>A terceira e a quarta praias são as mais isoladas. Na terceira partem os passeios de barco para Boipeba e Garapuá e a Quarta Praia é um verdadeiro paraíso para quem ama piscinas naturais.</p>
+                <p>Na maré baixa várias delas se formam e o cenário é lindo. Não há muita estrutura na quarta praia, o ideal é ir preparado para relaxar e ver poucas pessoas. Existem resorts e hotéis à beira-mar para quem quer curtir os dias de tranquilidade.</p>
+                <p>E se aguentar caminhar mais um pouco, não deixe de conhecer a mais desconhecida de todas: a quinta praia, ou praia do Encanto!</p>
+            </div>
+            <div>
+                <h1>Eagle Beach - Palm/Eagle Beach, Aruba</h1>
+                <img src="imagens/EagleBeach.webp" alt="Eagle Beach" title="Eagle Beach">
+                <strong>
+                    <figcaption>Aruba é um destino famoso para quem quer curtir as praias caribenhas em qualquer época do ano!</figcaption>
+                </strong>
+                <p>Vizinha da badalada Palm Beach, Eagle Beach é tranquila e está fora da rota dos furacões do Caribe!</p>
+                <p>Isso significa que você pode visitar Aruba o ano inteiro para conferir as belíssimas praias da ilha holandesa. A ilha conhecida como “One Happy Island” ou “uma ilha feliz”, não exige visto dos brasileiros (apenas se fizer conexão nos Estados Unidos). Mas não esqueça da vacina contra a febre amarela, ela é obrigatória!</p>
+                <p>Além das lindas praias, outras atrações de Aruba são:</p>
+                <ul>
+                    <li>Farol Califórnia que tem mais de 100 anos;</li>
+                    <li>Parque Nacional Arikok;</li>
+                    <li>Ruínas de Bushiribana;</li>
+                    <li>Cassinos;</li>
+                    <li>Capela Alto Vista;</li>
+                    <li>Centro de Oranjestad.</li>
+            </div>
+            </ul>
+            <div>
+                <h1>Radhanagar Beach - Havelock Island, Índia</h1>
+                <img src="imagens/Radhanagar.webp" alt="Radhanagar Beach" title="Radhanagar Beach">
+                <strong>
+                    <figcaption>A Radhanagar Beach é desconhecida por muitos turistas, mas sem dúvida vale a visita!</figcaption>
+                </strong>
+                <p>Talvez a Índia não seja conhecida por ser um destino de praia, mas vamos te mostrar que o país vai te surpreender! O golfo de Bengala é a maior baía do mundo e lá existem mais de 500 ilhas repletas de lindas praias.</p>
+                <p>A praia de Radhanagar, na pequena ilha de Havelock pertencente às Ilhas de Andaman e Nicobar, é um refúgio remoto com areia macia, águas transparentes e um pôr do sol de tirar o fôlego.</p>
+                <p>Na região há grandes hotéis e resorts, mas o clima continua paradisíaco e tranquilo. Aproveite os meses entre novembro e fevereiro para conhecer as lindas praias indianas.</p>
+                <p>Evite os meses do verão indiano, entre junho e setembro, que além de excessivamente quentes são bastante chuvosos devido às monções. E não esqueça de solicitar o seu visto indiano para conhecer o país!</p>
+            </div>
+            <div>
+                <h1>Baía do Sancho - Fernando de Noronha, Pernambuco, Brasil</h1>
+                <iframe id="teste" width="560" height="600" src="https://www.youtube.com/embed/b-AFwzds-8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <img src="imagens/Baí doSancho.webp" alt="Baía do Sancho" title="Baía do Sancho">
+                <strong>
+                    <figcaption>A Baía do Sancho é um tesouro escondido em Fernando de Noronha.</figcaption>
+                </strong>
+                <p>A próxima participação do Brasil na lista é a Praia da Baía do Sancho, no arquipélago de Fernando de Noronha.</p>
+                <p>A praia pertencente ao estado de Pernambuco já foi escolhida várias vezes como a praia mais bonita do mundo. A areia fofa, águas cristalinas e abundante vida marinha só pode ser acessada de barco ou por uma escada íngreme no penhasco.</p>
+                <p>Mas garantimos que o percurso vale a pena! É um dos lugares mais cobiçados para praticar mergulho. O acesso a praia é controlado para preservar o local, e é necessário pagar uma taxa de R$ 75,00. </p>
+            </div>
+        </div>
     </main>
 </body>
 <footer></footer>

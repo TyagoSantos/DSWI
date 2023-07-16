@@ -7,62 +7,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
+    <script src="js/script.js" defer></script>
     <title>7 Marvilhas Moderno</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="home.html">Página Incial</a>
+    <header class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="imagens/favicon.ico" alt="Logo GN" class="img_logo_header">
+        </div>
+        <nav class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="home.html" >Home</a>
             <a href="maravilhas_antigas.html">7 Maravilhas Antigas</a>
-            <a href="maravilhas_modernas.html">7 Marvilhas Moderno<odernas</a>
-            <a href="praias.html">Praias mais bonitas</a>
-            <a href="cadastro.html">cadastro</a>
+            <a href="maravilhas_modernas.html" class="active">7 Marvilhas Moderno</a>
+            <a href="praias.html">7 Praias Mais Bonitas</a>
+            <a href="contato.html">Contato</a>
         </nav>
     </header>
-    <main>
-        <h1>7 maravilhas do mundo moderno</h1>
-        <p> sete maravilhas do mundo moderno são uma lista de grandes construções que foram escolhidas pelo público em uma enquete pública realizada por uma empresa suíça.</p>
-        <img src="imagens/sete-maravilhas-mundo-moderno.webp" alt="As sete maravilhas do mundo moderno" title="As sete maravilhas do mundo moderno">
-        <figure>As sete maravilhas do mundo moderno foram anunciadas em 2007.</figure>
-        <h1>O que são as sete maravilhas do mundo moderno?</h1>
-        <p>As sete maravilhas do mundo moderno são um conjunto de sete construções que são consideradas verdadeiras maravilhas da humanidade, recebendo destaque por sua beleza e significância.</p>
-        <p>Essa lista é uma atualização não oficial da lista formulada na Antiguidade e conhecida como sete maravilhas do mundo antigo. A versão antiga foi elaborada por um grego chamado Filão de Bizâncio, no século III a.C.</p>
-        <p>A nova lista de maravilhas do mundo foi elaborada pela organização suíça New Open World Corporation (NOWC). A organização deu início a uma competição, com o intuito de que fossem escolhidas as sete novas maravilhas do mundo. Essa competição não teve caráter oficial, mas popularizou a lista e as construções.</p>
-        <h1>Cristo Redentor</h1>
-        <img src="imagens/cristo-redentor.webp" alt="Cristo Redentor" title="Cristo Redentor">
-        <figcaption>Vista do Cristo Redentor, no morro do Corcovado, no Rio de Janeiro</figcaption>
-        <p>O Cristo Redentor é uma estátua de Cristo com os braços abertos construída no alto do morro do Corcovado, estando 709 metros acima do nível do mar. Essa estátua foi inaugurada em 12 de outubro de 1931, e sua construção aconteceu na França, embora sua montagem tenha sido realizada aqui.</p>
-        <p>A construção do Cristo Redentor foi a conclusão de um projeto de longa data que desejava uma estátua no alto do morro do Corcovado. Faz parte do atual Parque Nacional da Tijuca, sendo que o Cristo Redentor, em dados de 2019, recebia cerca de dois milhões de visitantes por ano. <strong>Desde 2012, o Cristo Redentor é considerado um Patrimônio da Humanidade pela Unesco.</strong></p>
-        <p>Grande Muralha da China</p>
-        <img src="imagens/grande-muralha-china.webp" alt="Grande Muralha da China" title="Grande Muralha da China">
-        <figure>Vista aérea da Grande Muralha da China</figure>
-        <p>A Grande Muralha da China é um conjunto de fortificações construídas no norte da China, e a construção desse monumento foi iniciada no período da Dinastia Qin (221-206 a.C.), seguindo por muitos séculos, e, na Dinastia Ming (1368-1664), foram construídas as últimas instalações.</p>
-        <p>Essas fortificações <strong>foram desenvolvidas por antigas civilizações chinesas, com o intuito de afastar povos nômades que viviam na região das estepes</strong>, em especial os mongóis. Algumas partes da Grande Muralha chegam a ter nove metros de altura, e estima-se que sua extensão seja de mais de 21 mil quilômetros.</p>
-        <h1>Petra</h1>
-        <img src="imagens/cidade-petra.webp" alt="Antiga cidade de Petra" title="Antiga cidade de Petra">
-        <figcaption>Antiga cidade de Petra, na Jordânia.</figcaption>
-        <p>A cidade de Petra, localizada na Jordânia, <strong>é uma cidade histórica que foi resgatada, em 1812, pelo explorador Johann Ludwig Burckhardt</strong>. Era um importante centro comercial dos nabateus, povo semítico originário da península Arábica que se estabeleceu na região de Petra graças às importantes rotas comerciais que transportavam mercadorias, como o incenso árabe, a seda chinesa e as especiarias indianas.</p>
-        <p>Estima-se que sua construção tenha acontecido por volta do século I a.C. A grande fama de Petra vem do fato de que a cidade foi esculpida dentro das rochas, sendo chamada de Cidade Rosa, por causa da cor das pedras. Tornou-se Patrimônio da Humanidade em 1985, e, atualmente, recebe mais de um milhão de visitantes anuais.</p>
-        <h1>Coliseu</h1>
-        <img src="imagens/coliseu.webp" alt="Coliseu" title="Coliseu">
-        <figcaption>Vista do Coliseu em Roma, na Itália.</figcaption>
-        <p>O Coliseu é uma <strong>construção localizada em Roma, Itália</strong>. Esse anfiteatro romano era palco de grandes espetáculos teatrais e também sediava lutas de gladiadores durante a fase imperial romana. Sua construção se deu entre 72-80 d.C., período que cobriu os reinados de Vespasiano e Tito.</p>
-        <p>Os romanos chamavam o Coliseu de Amphitheatrum Flavium, e <strong>estima-se que esse anfiteatro suportava 50 mil espectadores</strong>. Foi largamente utilizado entre os anos de 80-404 d.C., e possuía 45 metros de altura. Seu uso foi sendo gradativamente reduzido a partir do século V, e sua estrutura sofreu danos por dois terremotos, um em 422 e outro em 1231</p>
-        <h1>Chichén Itzá</h1>
-        <img src="imagens/chichen-itza.webp" alt="Chichén Itzá" title="Chichén Itzá">
-        <figcaption>Vista aérea de Chichén Itzá, na península de Yucatán, no México.</figcaption>
-        <p>Chichén Itzá é uma cidade histórica pré-colombiana que foi construída na península de Yucatán, no México. <strong>A cidade foi construída pelos maias, mas sofreu grandes influências culturais dos toltecas</strong>. Acredita-se que ela tenha se desenvolvido em duas fases distintas. Uma fase teria se estendido do ano 300 ao ano 900 aproximadamente.</p>
-        <p>A influência maia na cidade de Chichén Itzá se fez presente entre os anos de 750 e 1200 aproximadamente. Ela foi uma das grandes cidades mesoamericanas, sendo marcada por um comércio próspero e um importante centro militar e também religioso naquela região.</p>
-        <h1>Machu Picchu</h1>
-        <img src="imagens/machu-picchu.webp" alt="Machu Picchu" title="Machu Picchu">
-        <figcaption>Vista aérea de Machu Picchu, em Cusco, no Peru.</figcaption>
-        <p><a href="https://www.historiadomundo.com.br/inca/machu-picchu.htm" target="_blank" rel="external">Machu Picchu</a> é uma <strong>cidade inca que foi construída em uma montanha a cerca de 2400 metros de altitude</strong>, localizada no vale do rio Urubamba, no Peru. A cidade foi fundada pelo imperador inca Pachacuti, em 1450. Acredita-se que o local possuía capacidade para abrigar apenas 1000 habitantes.</p>
-        <p>Acredita-se que Machu Picchu tenha sido construída com propósitos religiosos, sendo dedicada ao deus inca Inti. Com a conquista dos incas pelos espanhóis, liderados por Francisco Pizarro, a cidade foi abandonada pelos incas, ficando esquecida por quase 400 anos. Foi reencontrada, em 1911, por um explorador norte-americano chamado Hiram Bingham.</p>
-        <h1>Taj Mahal</h1>
-        <img src="imagens/1-taj-mahal.webp" alt="Taj Mahal" title="Taj Mahal">
-        <figcaption>Vista do Taj Mahal, em Agra, na Índia.</figcaption>
-        <p>O Taj Mahal é um mausoléu que foi construído em Agra, na Índia, entre os anos de 1631 e 1653. Esse mausoléu foi construído por ordem de Shah Jahan, imperador do Império Mugal. A construção se deu como uma <strong>homenagem do imperador a sua esposa favorita</strong>, chamada Mumtaz Mahal. Ela faleceu durante o trabalho de parto de seu 14º filho.</p>
-        <p>A construção do Taj Mahal foi realizada por cerca de 20 mil homens. <strong>Ela foi considerada Patrimônio da Humanidade pela Unesco em 1983</strong>, e, atualmente, é visitada por cerca de seis milhões de pessoas todo ano.</p>
+    <main tabindex="0" class="contentmain" onfocus="closeSidebar()" id="contentmain">
+        <div class="content">
+            <div>
+                <h1>7 maravilhas do mundo moderno</h1>
+                <p>As sete maravilhas do mundo moderno são uma lista de grandes construções que foram escolhidas pelo público em uma enquete pública realizada por uma empresa suíça.</p>
+                <img src="imagens/sete-maravilhas-mundo-moderno.webp" alt="As sete maravilhas do mundo moderno" title="As sete maravilhas do mundo moderno">
+                <strong>
+                    <figcaption>As sete maravilhas do mundo moderno foram anunciadas em 2007.</figcaption>
+                </strong>
+            </div>
+            <div>
+                <h1>O que são as sete maravilhas do mundo moderno?</h1>
+                <p>As sete maravilhas do mundo moderno são um conjunto de sete construções que são consideradas verdadeiras maravilhas da humanidade, recebendo destaque por sua beleza e significância.</p>
+                <p>Essa lista é uma atualização não oficial da lista formulada na Antiguidade e conhecida como sete maravilhas do mundo antigo. A versão antiga foi elaborada por um grego chamado Filão de Bizâncio, no século III a.C.</p>
+                <p>A nova lista de maravilhas do mundo foi elaborada pela organização suíça New Open World Corporation (NOWC). A organização deu início a uma competição, com o intuito de que fossem escolhidas as sete novas maravilhas do mundo. Essa competição não teve caráter oficial, mas popularizou a lista e as construções.</p>
+            </div>
+            <div>
+                <h1>Cristo Redentor</h1>
+                <img src="imagens/cristo-redentor.webp" alt="Cristo Redentor" title="Cristo Redentor">
+                <strong>
+                    <figcaption>Vista do Cristo Redentor, no morro do Corcovado, no Rio de Janeiro</figcaption>
+                </strong>
+                <p>O Cristo Redentor é uma estátua de Cristo com os braços abertos construída no alto do morro do Corcovado, estando 709 metros acima do nível do mar. Essa estátua foi inaugurada em 12 de outubro de 1931, e sua construção aconteceu na França, embora sua montagem tenha sido realizada aqui.</p>
+                <p>A construção do Cristo Redentor foi a conclusão de um projeto de longa data que desejava uma estátua no alto do morro do Corcovado. Faz parte do atual Parque Nacional da Tijuca, sendo que o Cristo Redentor, em dados de 2019, recebia cerca de dois milhões de visitantes por ano. <strong>Desde 2012, o Cristo Redentor é considerado um Patrimônio da Humanidade pela Unesco.</strong></p>
+            </div>
+            <div>
+                <h1>Grande Muralha da China</h1>
+                <img src="imagens/grande-muralha-china.webp" alt="Grande Muralha da China" title="Grande Muralha da China">
+                <strong>
+                    <figcaption>Vista aérea da Grande Muralha da China</figcaption>
+                </strong>
+                <p>A Grande Muralha da China é um conjunto de fortificações construídas no norte da China, e a construção desse monumento foi iniciada no período da Dinastia Qin (221-206 a.C.), seguindo por muitos séculos, e, na Dinastia Ming (1368-1664), foram construídas as últimas instalações.</p>
+                <p>Essas fortificações <strong>foram desenvolvidas por antigas civilizações chinesas, com o intuito de afastar povos nômades que viviam na região das estepes</strong>, em especial os mongóis. Algumas partes da Grande Muralha chegam a ter nove metros de altura, e estima-se que sua extensão seja de mais de 21 mil quilômetros.</p>
+            </div>
+            <div>
+                <h1>Petra</h1>
+                <img src="imagens/cidade-petra.webp" alt="Antiga cidade de Petra" title="Antiga cidade de Petra">
+                <strong>
+                    <figcaption>Antiga cidade de Petra, na Jordânia.</figcaption>
+                </strong>
+                <p>A cidade de Petra, localizada na Jordânia, <strong>é uma cidade histórica que foi resgatada, em 1812, pelo explorador Johann Ludwig Burckhardt</strong>. Era um importante centro comercial dos nabateus, povo semítico originário da península Arábica que se estabeleceu na região de Petra graças às importantes rotas comerciais que transportavam mercadorias, como o incenso árabe, a seda chinesa e as especiarias indianas.</p>
+                <p>Estima-se que sua construção tenha acontecido por volta do século I a.C. A grande fama de Petra vem do fato de que a cidade foi esculpida dentro das rochas, sendo chamada de Cidade Rosa, por causa da cor das pedras. Tornou-se Patrimônio da Humanidade em 1985, e, atualmente, recebe mais de um milhão de visitantes anuais.</p>
+            </div>
+            <div>
+                <h1>Coliseu</h1>
+                <img src="imagens/coliseu.webp" alt="Coliseu" title="Coliseu">
+                <strong>
+                    <figcaption>Vista do Coliseu em Roma, na Itália.</figcaption>
+                </strong>
+                <p>O Coliseu é uma <strong>construção localizada em Roma, Itália</strong>. Esse anfiteatro romano era palco de grandes espetáculos teatrais e também sediava lutas de gladiadores durante a fase imperial romana. Sua construção se deu entre 72-80 d.C., período que cobriu os reinados de Vespasiano e Tito.</p>
+                <p>Os romanos chamavam o Coliseu de Amphitheatrum Flavium, e <strong>estima-se que esse anfiteatro suportava 50 mil espectadores</strong>. Foi largamente utilizado entre os anos de 80-404 d.C., e possuía 45 metros de altura. Seu uso foi sendo gradativamente reduzido a partir do século V, e sua estrutura sofreu danos por dois terremotos, um em 422 e outro em 1231</p>
+            </div>
+            <div>
+                <h1>Chichén Itzá</h1>
+                <img src="imagens/chichen-itza.webp" alt="Chichén Itzá" title="Chichén Itzá">
+                <figcaption>Vista aérea de Chichén Itzá, na península de Yucatán, no México.</figcaption>
+                <p>Chichén Itzá é uma cidade histórica pré-colombiana que foi construída na península de Yucatán, no México. <strong>A cidade foi construída pelos maias, mas sofreu grandes influências culturais dos toltecas</strong>. Acredita-se que ela tenha se desenvolvido em duas fases distintas. Uma fase teria se estendido do ano 300 ao ano 900 aproximadamente.</p>
+                <p>A influência maia na cidade de Chichén Itzá se fez presente entre os anos de 750 e 1200 aproximadamente. Ela foi uma das grandes cidades mesoamericanas, sendo marcada por um comércio próspero e um importante centro militar e também religioso naquela região.</p>
+            </div>
+            <div>
+                <h1>Machu Picchu</h1>
+                <img src="imagens/machu-picchu.webp" alt="Machu Picchu" title="Machu Picchu">
+                <strong>
+                    <figcaption>Vista aérea de Machu Picchu, em Cusco, no Peru.</figcaption>
+                </strong>
+                <p><a href="https://www.historiadomundo.com.br/inca/machu-picchu.htm" target="_blank" rel="external">Machu Picchu</a> é uma <strong>cidade inca que foi construída em uma montanha a cerca de 2400 metros de altitude</strong>, localizada no vale do rio Urubamba, no Peru. A cidade foi fundada pelo imperador inca Pachacuti, em 1450. Acredita-se que o local possuía capacidade para abrigar apenas 1000 habitantes.</p>
+                <p>Acredita-se que Machu Picchu tenha sido construída com propósitos religiosos, sendo dedicada ao deus inca Inti. Com a conquista dos incas pelos espanhóis, liderados por Francisco Pizarro, a cidade foi abandonada pelos incas, ficando esquecida por quase 400 anos. Foi reencontrada, em 1911, por um explorador norte-americano chamado Hiram Bingham.</p>
+            </div>
+            <div>
+                <h1>Taj Mahal</h1>
+                <img src="imagens/1-taj-mahal.webp" alt="Taj Mahal" title="Taj Mahal">
+                <strong>
+                    <figcaption>Vista do Taj Mahal, em Agra, na Índia.</figcaption>
+                </strong>
+                <p>O Taj Mahal é um mausoléu que foi construído em Agra, na Índia, entre os anos de 1631 e 1653. Esse mausoléu foi construído por ordem de Shah Jahan, imperador do Império Mugal. A construção se deu como uma <strong>homenagem do imperador a sua esposa favorita</strong>, chamada Mumtaz Mahal. Ela faleceu durante o trabalho de parto de seu 14º filho.</p>
+                <p>A construção do Taj Mahal foi realizada por cerca de 20 mil homens. <strong>Ela foi considerada Patrimônio da Humanidade pela Unesco em 1983</strong>, e, atualmente, é visitada por cerca de seis milhões de pessoas todo ano.</p>
+            </div>
+        </div>
     </main>
 </body>
 <footer></footer>
